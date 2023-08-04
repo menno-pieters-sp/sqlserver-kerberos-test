@@ -30,3 +30,5 @@ An example call looks as follows:
 ```
 java  -Dsun.security.krb5.debug=true -Djava.security.auth.login.config=SQLSERVER.conf -Djava.security.krb5.conf=krb5.conf -jar kerberos-test.jar -h sql.example.com -u user@example.com
 ```
+
+The option `-Dsun.security.krb5.debug=true` enables kerberos debugging. The option `-Djava.security.auth.login.config=SQLSERVER.conf` tells Java where to find the `SQLSERVER.conf` file. An alternative location could be provided, if needed. Similarly, the option `-Djava.security.krb5.conf=krb5.conf` points to the `krb5.conf` file. The option `-jar` is needed and requires the jar file name (`kerberos-test.jar` as provided). 
